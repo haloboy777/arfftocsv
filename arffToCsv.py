@@ -9,7 +9,7 @@
 import os
 
 # Getting all the arff files from the current directory
-files = [arff for arff in os.listdir() if arff.endswith(".arff")]
+files = [arff for arff in os.listdir('.') if arff.endswith(".arff")]
 
 # Function for converting arff list to csv list
 def toCsv(content):
