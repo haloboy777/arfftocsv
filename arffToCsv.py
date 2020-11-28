@@ -18,11 +18,11 @@ def toCsv(content):
     newContent = []
     for line in content:
         if not data:
-            if "@attribute" in line:
+            if "@ATTRIBUTE" in line:
                 attri = line.split()
-                columnName = attri[attri.index("@attribute")+1]
+                columnName = attri[attri.index("@ATTRIBUTE")+1]
                 header = header + columnName + ","
-            elif "@data" in line:
+            elif "@DATA" in line:
                 data = True
                 header = header[:-1]
                 header += '\n'
